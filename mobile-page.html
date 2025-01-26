@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile-page.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+       <!-- -------------------------- banner ------------------------------- -->
+       <div class="banner">
+        <img src="pic/banner.jpg" alt="" class="img-fluid d-none d-md-block">
+        <img src="pic/banner responsive.webp" alt="" class="img-fluid d-block d-md-none">
+    </div>
+ <!-- ----------------------- navbar menu ---- ------------------->
+<nav class="navbar navbar-expand-lg border-bottom shadow">
+ <!---------- div top menu ----------->
+    <div class="container-fluid">
+<!-- -----------------------------logo--------------------------------------- -->
+    <a href="index.css">
+    <img class="img d-flex d-lg-flex" src="pic/logo copy.png" alt="logo">
+    </a>
+<!---------------------------------------- top menu------------------------------- -->
+ <div class="collapse navbar-collapse top-menu">
+    <ul class="navbar-nav m-auto gap-3">
+ <!------ category ------->
+    <li class="nav-item ">
+        <a class="nav-link d-flex gap-1 " href="#" >
+         <img class="pic-category" src="pic/menu-regular-24.png" alt="category">
+           <p class="m-auto">دسته بندی کالاها</p>
+        </a>
+    </li>
+ <!----- popular ------>
+    <li class="nav-item ">
+      <a class="nav-link d-flex gap-1" href="#" >
+        <img class="pic-category" src="pic-category/icons8-fire-48.png" alt="category">
+        <p class="m-auto ">پرفروش ترین ها</p>
+      </a>
+    </li>
+<!-------- off ----->
+<li class="nav-item  ">
+    <a class="nav-link d-flex gap-1" href="#" >
+       <img class="pic-category" src="pic-category/icons8-discount-48.png" alt="category">
+        <p class="m-auto "> تخفیف ها</p>
+    </a>
+ </li>
+<!-------- question ------->
+<li class="nav-item ">
+   <a class="nav-link d-flex gap-1" href="#" >
+       <img class="pic-category" src="pic-category/icons8-support-48.png" alt="category">
+           <p class="m-auto ">پرسش و پاسخ</p>
+    </a>
+ </li>
+<!------ branches ------>
+<li class="nav-item ">
+   <a class="nav-link d-flex gap-1" href="#" >
+        <img class="pic-category" src="pic-category/icons8-location-48.png" alt="category">
+           <p class="m-auto "> شعب </p>
+    </a>
+ </li>
+ <!------- about ----->
+<li class="nav-item">
+    <a class="nav-link d-flex gap-1" href="#" >
+        <img class="pic-category" src="pic-category/icons8-about-us-48.png" alt="category">
+            <p class="m-auto "> درباره ما </p>
+    </a>
+ </li>
+</ul>              
+</div>
+<!----------- sign in/register ----------->
+<div class="top-menu p-1 d-none d-sm-none d-md-none d-lg-none  d-xl-flex">
+    <div>
+       <a href="sign-in.html">
+           <button class=" btn btn-light m-1 sign-in" ><img src="pic/signin.svg" alt="sign in">ورود | ثبت‌ نام</button>
+        </a>
+    </div>
+<!------- basket ------>
+ <div>
+    <button class="btn btn-light m-1 sign-in"><img src="pic/basket.svg" alt=""></button>
+ </div>
+ </div>
+<!-- ---------------------------------------------------------------------------- -->
+ <!-- 3 imgs (heart- sign in and basket) for md and sm screens -->
+<div class="top-menu d-flex d-sm-block d-md-block d-lg-none ">
+   <div class="d-flex gap-1">
+ <!-- heart icon -->
+ <div>
+    <a href="#">
+       <button class=" btn btn-light  sign-in" ><img src="pic/heart.svg" alt="sign in"> </button>
+    </a>
+ </div>
+ <!-- basket img -->
+ <div>
+    <a href="">
+        <button class="btn btn-light  sign-in"><img src="pic/basket.svg" alt=""></button>
+    </a>
+ </div>
+ <!-- sign in img -->
+ <div>
+    <a href="sign-in.html">
+       <button class=" btn btn-light  sign-in" ><img src="pic/signin.svg" alt="sign in"> </button>
+    </a>
+     </div>
+   </div>
+   </div>
+  </div> 
+  </nav>
+  <!------------------------- end of nav bar ------------------- -->
+  <section class="container-fluid mx-auto p-1">
+    <h5 class="mt-3 text-secondary fw-bold p-2">گوشی موبایل</h5>
+    <!-- ----- general div filter and mobile --- -->
+    <div class=" p-1 d-flex flex-column flex-lg-row gap-3 "> 
+<!-- ---- filters ------ -->
+       <div class="filter border rounded-2 p-3 d-none d-sm-none d-md-none d-lg-block">
+        <h4 class="mt-2 top-menu text-center">فیلتر ها</h4>
+        <hr>
+        <div class="top-menu"> 
+            <div class=" p-2">
+                <label class="d-block fw-bold "><input type="checkbox" class="m-2 mb-4">فقط کالاهای موجود</label> 
+             </div>
+     <!------------------------------ brand accordion ----------------- -->
+         <div class="accordion " id="filterAccordion">
+         <!-- برند -->
+         <div class="accordion-item ">
+           <h2 class="accordion-header">
+             <button class="accordion-button top-menu collapsed"  data-bs-toggle="collapse" data-bs-target="#brandCollapse">برند</button>
+           </h2>
+       <div id="brandCollapse" class="accordion-collapse collapse " data-bs-parent="#filterAccordion">
+          <div class="accordion-body pt-2">
+            <!-- brand apple -->
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox">
+                 <label class="form-check-label" >اپل</label>
+             </div>
+             <!-- brand samsung -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" >
+                <label class="form-check-label" >سامسونگ</label>
+             </div>
+             <!-- brand xiaomi -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" >
+                <label class="form-check-label" >شیائومی</label>
+             </div>
+             <!-- brand huawei -->
+              <div class="form-check">
+                 <input class="form-check-input" type="checkbox" >
+                 <label class="form-check-label" >هوآوی</label>
+              </div>
+              <!-- brand nokia -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" >
+                    <label class="form-check-label" >نوکیا</label>
+                </div>
+                <!-- all brands -->
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="all">
+                    <label class="form-check-label" for="all">همه برندها</label>
+                </div>
+            </div>
+         </div>
+    </div>
+<!------ color accordion ------->
+    <div class="accordion-item ">
+        <h2 class="accordion-header">
+          <button class="accordion-button top-menu collapsed"  data-bs-toggle="collapse" data-bs-target="#colorCollapse">رنگ</button>
+        </h2>
+    <div id="colorCollapse" class="accordion-collapse collapse " data-bs-parent="#filterAccordion">
+       <div class="accordion-body pt-2">
+         <!-- black -->
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label" >مشکی</label>
+          </div>
+          <!-- white-->
+         <div class="form-check">
+             <input class="form-check-input" type="checkbox" >
+             <label class="form-check-label" >سفید</label>
+          </div>
+           <!-- gray -->
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" >
+                 <label class="form-check-label" >خاکستری</label>
+             </div>
+             <!-- all colors -->
+              <div class="form-check">
+                 <input class="form-check-input" type="checkbox" >
+                 <label class="form-check-label" >همه رنگ ها</label>
+             </div>
+         </div>
+      </div>
+ </div>
+<!-- end of color accordion -->
+ <!-- sim cart  -->
+ <div class="accordion-item ">
+    <h2 class="accordion-header">
+      <button class="accordion-button top-menu collapsed"  data-bs-toggle="collapse" data-bs-target="#simCollapse">تعداد سیمکارت</button>
+    </h2>
+<div id="simCollapse" class="accordion-collapse collapse " data-bs-parent="#filterAccordion">
+   <div class="accordion-body pt-2">
+     <!-- 1 sim -->
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label" >تک سیم</label>
+      </div>
+      <!-- 2 sim-->
+     <div class="form-check">
+         <input class="form-check-input" type="checkbox" >
+         <label class="form-check-label" >دو سیم </label>
+      </div>
+     </div>
+  </div>
+</div>
+<!-- end of sim accordion -->
+ <!-- price accordion -->
+ <div class="accordion-item ">
+    <h2 class="accordion-header">
+      <button class="accordion-button top-menu collapsed"  data-bs-toggle="collapse" data-bs-target="#priceCollapse"> محدوده قیمت</button>
+    </h2>
+<div id="priceCollapse" class="accordion-collapse collapse " data-bs-parent="#filterAccordion">
+   <div class="accordion-body pt-2">
+    
+     </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ----- div ax mobile ha - matn balash --- -->
+<div class=" d-block w-100 justify-content-around">
+    <div class=" d-flex justify-content-between">
+        <div class=" d-flex gap-3 top-menu">
+            <p>
+                <img class="" src="pic/moratabsazi.svg" alt="noratabsazi">
+                مرتب سازی بر اساس:
+            </p>
+            <p class="text-danger">بیشترین قیمت </p>
+            <p class="d-none d-sm-none d-md-block d-lg-block">کمترین قیمت</p>
+            <p class="d-none d-sm-none d-md-block d-lg-block">جدیدترین‌ها</p>
+            <p class="d-none d-sm-none d-md-block d-lg-block">پرفروش ترین ها</p>
+          </div>
+          <div class=" text-secondary fw-bold align-content-center top-menu">
+            <p>935 کالا</p>
+    </div> 
+</div>
+<!-- ---- div mobiles ---- -->
+<div class=" mt-2 rounded-2 back d-block p-2 ">
+    <div class="  d-flex gap-2 p-1 container-fluid ">
+        <!-- item 1 -->
+            <div class=" bg-white rounded-5 p-2">
+              <a href="item.html" class="text-decoration-none text-black">
+                <div class="bg-white rounded-4  m-2">
+                    <div class="bg-white  d-flex justify-content-between">
+                        <div class="bg-white">
+                            <i class="fas fa-heart icon-heart m-2"
+                            onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                            <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                        </div>
+                       <div class="">
+                        <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+                       </div>
+                    </div>
+
+                    <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/iphone16.webp" alt="">
+                    <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                        </p>
+                    <!-- price text -->
+                    <div class="text-center mt-3 bg-white w-100 m-auto">
+                        <h5 class="text-decoration-line-through text-danger">86,999,000
+                            تومان </h5>
+                        <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                      <button class="btn btn-outline-secondary " onclick="alert('به سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- item 2 -->
+        <div class=" bg-white rounded-5 p-2 d-none d-sm-block d-md-block ">
+          <a href="#" class="text-decoration-none text-black">
+            <div class="bg-white rounded-4  m-2">
+                <div class="bg-white  d-flex justify-content-between">
+                    <div class="bg-white">
+                        <i class="fas fa-heart icon-heart m-2"
+                        onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                        <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                    </div>
+                   <div class="">
+                    <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+                   </div>
+                </div>
+
+                <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/iphone16.webp" alt="">
+                <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                    </p>
+                <!-- price text -->
+                <div class="text-center mt-3 bg-white w-100 m-auto">
+                    <h5 class="text-decoration-line-through text-danger">86,999,000
+                        تومان </h5>
+                    <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+                </div>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                  <button class="btn btn-outline-secondary "  onclick="alert('به  سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+                </div>
+            </div>
+        </a>
+    </div>
+        <!-- item 3 -->
+        <div class=" bg-white rounded-5 p-2 d-none d-sm-none d-md-none d-lg-none d-xl-block">
+          <a href="#" class="text-decoration-none text-black">
+              <div class="bg-white rounded-4  m-2">
+                  <div class="bg-white  d-flex justify-content-between">
+                      <div class="bg-white">
+                          <i class="fas fa-heart icon-heart m-2"
+                          onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                          <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                      </div>
+                     <div class="">
+                      <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+                     </div>
+                  </div>
+
+                  <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/iphone16.webp" alt="">
+                  <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                      </p>
+                  <!-- price text -->
+                  <div class="text-center mt-3 bg-white w-50 m-auto">
+                      <h5 class="text-decoration-line-through text-danger">86,999,000
+                          تومان </h5>
+                      <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+                  </div>
+                  <div class="d-flex justify-content-center mt-4 mb-4">
+                    <button class="btn btn-outline-secondary " onclick="alert('به  سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+                  </div>
+              </div>
+          </a>
+      </div>
+    </div>
+<!-- ------- coloumn 2 -->
+<div class="  d-flex gap-2 p-1 container-fluid ">
+  <!-- item 1 -->
+      <div class=" bg-white rounded-5 p-2">
+        <a href="#" class="text-decoration-none text-black">
+          <div class="bg-white rounded-4  m-2">
+              <div class="bg-white  d-flex justify-content-between">
+                  <div class="bg-white">
+                      <i class="fas fa-heart icon-heart m-2"
+                      onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                      <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                  </div>
+                 <div class="">
+                  <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+                 </div>
+              </div>
+
+              <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/redmi13pro.png" alt="">
+              <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                  </p>
+              <!-- price text -->
+              <div class="text-center mt-3 bg-white w-100 m-auto">
+                  <h5 class="text-decoration-line-through text-danger">86,999,000
+                      تومان </h5>
+                  <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+              </div>
+              <div class="d-flex justify-content-center mt-4 mb-4">
+                <button class="btn btn-outline-secondary " onclick="alert('به  سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+              </div>
+          </div>
+      </a>
+  </div>
+  <!-- item 2 -->
+  <div class=" bg-white rounded-5 p-2 d-none d-sm-block d-md-block ">
+    <a href="#" class="text-decoration-none text-black">
+      <div class="bg-white rounded-4  m-2">
+          <div class="bg-white  d-flex justify-content-between">
+              <div class="bg-white">
+                  <i class="fas fa-heart icon-heart m-2"
+                  onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                  <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+              </div>
+             <div class="">
+              <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+             </div>
+          </div>
+
+          <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/ultra.png" alt="">
+          <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+              </p>
+          <!-- price text -->
+          <div class="text-center mt-3 bg-white w-100 m-auto">
+              <h5 class="text-decoration-line-through text-danger">86,999,000
+                  تومان </h5>
+              <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+          </div>
+          <div class="d-flex justify-content-center mt-4 mb-4">
+            <button class="btn btn-outline-secondary " onclick="alert('به  سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+          </div>
+      </div>
+  </a>
+</div>
+  <!-- item 3 -->
+  <div class=" bg-white rounded-5 p-2 d-none d-sm-none d-md-none d-lg-none d-xl-block">
+    <a href="#" class="text-decoration-none text-black">
+        <div class="bg-white rounded-4  m-2">
+            <div class="bg-white  d-flex justify-content-between">
+                <div class="bg-white">
+                    <i class="fas fa-heart icon-heart m-2"
+                    onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                    <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                </div>
+               <div class="">
+                <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+               </div>
+            </div>
+
+            <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/iphone13.png" alt="">
+            <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                </p>
+            <!-- price text -->
+            <div class="text-center mt-3 bg-white w-50 m-auto">
+                <h5 class="text-decoration-line-through text-danger">86,999,000
+                    تومان </h5>
+                <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+            </div>
+            <div class="d-flex justify-content-center mt-4 mb-4">
+              <button class="btn btn-outline-secondary " onclick="alert('به  سبد خرید افزوده شد');"> افزودن به سبد خرید </button>
+
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<!------------------ column 3 ---- -->
+<div class="  d-flex gap-2 p-1 container-fluid ">
+  <!-- item 1 -->
+      <div class=" bg-white rounded-5 p-2">
+        <a href="item.html" class="text-decoration-none text-black">
+          <div class="bg-white rounded-4  m-2">
+              <div class="bg-white  d-flex justify-content-between">
+                  <div class="bg-white">
+                      <i class="fas fa-heart icon-heart m-2"
+                      onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                      <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                  </div>
+                 <div class="">
+                  <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+                 </div>
+              </div>
+
+              <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/redminote13.webp" alt="">
+              <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                  </p>
+              <!-- price text -->
+              <div class="text-center mt-3 bg-white w-100 m-auto">
+                  <h5 class="text-decoration-line-through text-danger">86,999,000
+                      تومان </h5>
+                  <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+              </div>
+              <div class="d-flex justify-content-center mt-4 mb-4">
+                <button class="btn btn-outline-secondary "> افزودن به سبد خرید </button>
+
+              </div>
+          </div>
+      </a>
+  </div>
+  <!-- item 2 -->
+  <div class=" bg-white rounded-5 p-2 d-none d-sm-block d-md-block ">
+    <a href="item.html" class="text-decoration-none text-black">
+      <div class="bg-white rounded-4  m-2">
+          <div class="bg-white  d-flex justify-content-between">
+              <div class="bg-white">
+                  <i class="fas fa-heart icon-heart m-2"
+                  onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                  <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+              </div>
+             <div class="">
+              <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+             </div>
+          </div>
+
+          <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/s24ultra.webp" alt="">
+          <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+              </p>
+          <!-- price text -->
+          <div class="text-center mt-3 bg-white w-100 m-auto">
+              <h5 class="text-decoration-line-through text-danger">86,999,000
+                  تومان </h5>
+              <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+          </div>
+          <div class="d-flex justify-content-center mt-4 mb-4">
+            <button class="btn btn-outline-secondary "> افزودن به سبد خرید </button>
+
+          </div>
+      </div>
+  </a>
+</div>
+  <!-- item 3 -->
+  <div class=" bg-white rounded-5 p-2 d-none d-sm-none d-md-none d-lg-none d-xl-block">
+    <a href="item.html" class="text-decoration-none text-black">
+        <div class="bg-white rounded-4  m-2">
+            <div class="bg-white  d-flex justify-content-between">
+                <div class="bg-white">
+                    <i class="fas fa-heart icon-heart m-2"
+                    onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                    <i class="fas fa-shopping-cart icon-shop" onclick="alert('به سبد خرید افزوده شد');"></i>
+                </div>
+               <div class="">
+                <span class="badge bg-danger rounded-5 font-monospace m-auto"> 10% </span>
+
+               </div>
+            </div>
+
+            <img class="w-50 d-block m-auto rounded-3 mt-3" src="ax/iphone13.png" alt="">
+            <p class="w-75 m-auto mt-3 text-center p-1">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده
+
+                </p>
+            <!-- price text -->
+            <div class="text-center mt-3 bg-white w-50 m-auto">
+                <h5 class="text-decoration-line-through text-danger">86,999,000
+                    تومان </h5>
+                <h5 class="fw-bold gap-1">85,360,000 تومان</h5>
+            </div>
+            <div class="d-flex justify-content-center mt-4 mb-4">
+              <button class="btn btn-outline-secondary "> افزودن به سبد خرید </button>
+
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<!--end of  column 3 ----- -->
+</div>
+
+
+</div> 
+</div>
+
+  </section>
+
+
+
+
+
+<hr>
+  <!-- -------------------------------------- footer ------------------------------------------------- -->
+  <footer class="container d-none d-sm-none d-md-none d-lg-block d-xl-block mt-4">
+    <div class=" text-center border p-3 rounded-3 mt-3">
+        <img class="img " src="pic/logo copy.png" alt="">
+    </div>
+    <div class="d-flex justify-content-between w-auto mt-5 ">
+        <div class="d-flex flex-column gap-2 mt-4">
+            <p class="mb-2 text-black"> درباره‌ی صباتک </p>
+            <p class="text-secondary">تماس با ما</p>
+            <p class="text-secondary"> درباره‌ی ما </p>
+            <p class="text-secondary">مجله‌ی صباتک  </p>
+            <p class="text-secondary">شعب</p>
+            <p class="text-secondary">شرایط و قوانین</p>
+            <p class="text-secondary">خرید اقساطی</p>
+        </div>
+        <div class="d-flex flex-column gap-2 mt-4">
+            <p class="mb-2 text-black">خدمات مشتریان</p>
+            <p class="text-secondary">پرسش‌های متداول</p>
+            <p class="text-secondary"> راهنمای خرید</p>
+            <p class="text-secondary">شرایط بازگشت کالا</p>
+            <p class="text-secondary">ثبت شکایات </p>
+            <p class="text-secondary">حریم خصوصی</p>
+        </div>
+        <div class="d-flex flex-column gap-2 mt-4">
+            <p class="mb-2 text-black">دسته‌بندی‌های پربازدید</p>
+            <p class="text-secondary">گوشی موبایل</p>
+            <p class="text-secondary"> لپتاب</p>
+            <p class="text-secondary">هدفون و هندزفری</p>
+            <p class="text-secondary">اسپیکر و بلندگو</p>
+            <p class="text-secondary">ساعت هوشمند</p>
+            <p class="text-secondary">شارژر و پاوربانک</p>
+        </div>
+        <div class="d-flex flex-column gap-2 mt-4">
+            <p class="mb-2 text-black">ساعت پاسخگویی</p>
+            <p class="text-secondary">۷ روز هفته از ساعت ۹ الی ۲۰</p>
+            <div>
+                <div class="mohtava d-flex gap-2 ">
+                    <i class="bx bx-support mt-1" ></i>
+                    <div class="call d-flex flex-column">
+                        <p> تلفن امور مشتریان
+                          <p class="text-secondary">021-41016</p>
+                        </p>                           
+                      </div>
+                </div>
+                <div class="mohtava d-flex gap-2">
+                    <i class="bx bx-info-circle mt-1"></i>
+                    <div>
+                        <p >روابط عمومی </p>
+                        <p class="text-secondary">Info@sabatech.com</p>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <!---------------------- social media column -------------------- -->
+        <div class="d-flex flex-column gap-2 mt-4">
+            <h3> ما را دنبال کنید </h3>
+            <div>
+                <img src="social media/bxl-facebook.svg" alt="facebook">
+                <img src="social media/bxl-instagram.svg" alt="instagram">
+                <img src="social media/bxl-telegram.svg" alt="telegram">
+                <img src="social media/bxl-twitter.svg" alt="twitter">
+            </div>
+        </div>            
+    </div>
+        <!-------------------- متن فروشگاه اینترنتی صباتک ------------------------>
+        <div class=" mt-2 d-lg-flex">
+        <div >
+            <h1 class=" mb-2 ">
+              فروشگاه اینترنتی <span class="text-[#E10A0A]">صباتک</span>
+            </h1>
+            <p class="text-[11px]  font-iranyekan-bold text-[#878787]">
+              فروشگاه اینترنتی صباتک به طور رسمی در فروردین ماه ۹۹ با توجه
+              به رشد روزافزون خدمات اینترنتی و دنیای تکنولوژی در جهان امروز و
+              نیاز به کالاهای دیجیتال تاسیس شد. هدف این فروشگاه اینترنتی
+              خدمت‌رسانی و تامین جدیدترین مدل‌ها از معتبرترین برند‌های کالای
+              دیجیتال ، لوازم خانگی و سرگرمی است.
+            </p>
+          </div>
+          <!-------------------------- namade etemad ------------------- -->
+
+          <div class="d-lg-flex d-flex justify-content-center gap-3 mt-4">
+            <img src="footer/etemad.png" alt="" class="img-etemad">
+            <img src="footer/namad.webp" alt="" class="img-etemad">
+          </div>
+    </div>
+    <hr>
+    <!--------------------- copyright text ----------------------->
+    <div class=" d-lg-block mt-2 ">
+        <div class="container mx-auto d-lg-flex justify-content-around">
+            <div class=" w-75">
+              <p class=""> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>              
+          </div>
+          <div  class="copyright">© Copyright 2022 sabatech.com</div>
+        </div>
+       
+      </div>
+</footer>
+<!------------------------- mobile footer ---------------------->
+<footer class="d-block d-sm-block d-md-block d-lg-none d-xl-none justify-content-around gap-3  p-3">
+    <div class="w-75 m-auto border p-3 rounded-3 mt-3">
+        <img class="img  d-block m-auto " src="pic/logo copy.png" alt="">
+    </div>
+    <div class=" w-full container text-center m-auto">
+        <p class="mt-3 text-secondary">
+          <span class="text-danger">همراه شما هستیم.</span> با ما در ارتباط
+          باشید...
+        </p>
+      </div>
+      <div class=" gap-2 d-flex justify-content-center gap-5">
+        <div class="mohtava d-flex gap-2 ">
+            <i class="bx bx-support mt-1" ></i>
+            <div class="call d-flex flex-column">
+                <p> تلفن امور مشتریان
+                  <p class="text-secondary">021-41016</p>
+                </p>                           
+              </div>
+        </div>
+        <div class="mohtava d-flex gap-2 ">
+            <i class="bx bx-info-circle mt-1"></i>
+            <div>
+                <p >روابط عمومی </p>
+                <p class="text-secondary">Info@sabatech.com</p>
+            </div>                   
+        </div>
+
+      </div>
+     <!-- icon -->
+     <div class=" d-flex m-3 d-md-flex gap-5 text-secondary justify-content-center">
+        <div class="text-center">
+            <img src="footer/express-delivery.svg" alt="">
+            <p class="">امکان تحویل اکسپرس</p>
+        </div>
+        <div class="text-center">
+            <img src="footer/cash-on-delivery.svg" alt="">
+            <p>امکان پرداخت در محل</p>
+        </div>
+        <div class="text-center">
+            <img src="footer/support.svg" alt="">
+            <p> ۷ روز هفته، ۲۴ ساعته</p>
+        </div>
+        <div class="text-center d-none d-sm-block">
+            <img src="footer/days-return.svg" alt="">
+            <p>۷ روز ضمانت بازگشت </p>
+        </div>
+        <div class="text-center d-none d-sm-block">
+            <img src="footer/original-products.svg" alt="">
+            <p>ضمانت اصل بودن کالا</p>
+        </div>
+    </div>
+  <!-------------------- متن فروشگاه اینترنتی صباتک ------------------------>
+               <div class=" mt-2 d-lg-none d-block d-sm-block d-md-flex gap-2">
+                <div >
+                    <h1 class=" mb-2 ">
+                      فروشگاه اینترنتی <span class="text-[#E10A0A]">صباتک</span>
+                    </h1>
+                    <p class="text-[11px]  font-iranyekan-bold text-[#878787]">
+                      فروشگاه اینترنتی صباتک به طور رسمی در فروردین ماه ۹۹ با توجه
+                      به رشد روزافزون خدمات اینترنتی و دنیای تکنولوژی در جهان امروز و
+                      نیاز به کالاهای دیجیتال تاسیس شد. هدف این فروشگاه اینترنتی
+                      خدمت‌رسانی و تامین جدیدترین مدل‌ها از معتبرترین برند‌های کالای
+                      دیجیتال ، لوازم خانگی و سرگرمی است.
+                    </p>
+                  </div>
+                  <!-------------------------- namade etemad ------------------- -->
+    
+                  <div class="d-lg-none mt-4 d-sm-flex d-md-flex justify-content-center gap-3 m-sm-auto ">
+                    <img src="footer/etemad.png" alt="" class=" img-etemad">
+                    <img src="footer/namad.webp" alt="" class="img-etemad ">
+                  </div>
+            </div>
+            <hr>
+            <!--------------------- copyright text ----------------------->
+            <div class=" d-lg-block mt-2 ">
+                <div class="container mx-auto d-none d-sm-none d-md-flex justify-content-around gap-5">
+                    <div class=" w-50">
+                      <p class=""> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>              
+                  </div>
+                  <div  class="copyright">© Copyright 2022 sabatech.com</div>
+                </div>
+               
+              </div>
+              <!-- copyright mobile -->
+              <div class=" mt-2 ">
+                <div class=" d-flex d-sm-flex d-md-none ">
+                    <div class=" w-100">
+                      <p class="w-100"> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>  
+                      <div  class="">© Copyright 2022 sabatech.com</div>            
+                  </div>                     
+               </div>                  
+              </div>
+</footer>
+</body>
+</html>

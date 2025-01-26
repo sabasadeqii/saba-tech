@@ -1,0 +1,44 @@
+@font-face {
+    font-family: bnazanin ;
+    src: url(font/B\ Nazanin-.ttf);
+}
+@font-face {
+    font-family: bbnazanin;
+    src: url(font/B\ Nazanin\ Bold-.ttf);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+body , html
+{
+    direction: rtl !important;
+    font-family: bnazanin !important;
+    position: relative; 
+    overflow-x: hidden;
+} 
+/* ------ background-img ---------- */
+.background-image {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    filter: blur(2px);
+    -webkit-filter: blur(5px);
+    z-index: -1;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+

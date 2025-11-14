@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قیمت و خرید گوشی</title>
+    <link rel="stylesheet" href="item.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <!-- ----------------------- navbar menu ---- ------------------->
+     <nav class="navbar navbar-expand-lg border-bottom shadow">
+        <!---------- div top menu ----------->
+         <div class="container-fluid">
+          <!-- -----------------------------logo--------------------------------------- -->
+            <a href="tamrin.html">
+                <img class="img d-flex d-lg-flex" src="pic/logo copy.png" alt="logo">
+            </a>
+            <!---------------------------------------- top menu------------------------------- -->
+            <div class="collapse navbar-collapse top-menu">
+                <ul class="navbar-nav m-auto gap-3">
+                    <!-- category -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1 " href="#" >
+                            <img class="pic-category" src="pic/menu-regular-24.png" alt="category">
+                            <p class="m-auto">دسته بندی کالاها</p>
+                        </a>
+                    </li>
+                    <!-- popular -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-fire-48.png" alt="category">
+                            <p class="m-auto ">پرفروش ترین ها</p>
+                        </a>
+                    </li>
+                    <!-- off -->
+                    <li class="nav-item  ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-discount-48.png" alt="category">
+                            <p class="m-auto "> تخفیف ها</p>
+                        </a>
+                    </li>
+                    <!-- question -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-support-48.png" alt="category">
+                            <p class="m-auto ">پرسش و پاسخ</p>
+                        </a>
+                    </li>
+                    <!-- branches -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-location-48.png" alt="category">
+                            <p class="m-auto "> شعب </p>
+                        </a>
+                    </li>
+                    <!-- about -->
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-about-us-48.png" alt="category">
+                            <p class="m-auto "> درباره ما </p>
+                        </a>
+                    </li>
+                </ul>              
+            </div>
+             <!-- sign in/register -->
+             <div class="top-menu p-1 d-none d-sm-none d-md-none d-lg-none  d-xl-flex">
+                <div>
+                    <a href="sign-in.html">
+                        <button class=" btn btn-light m-1 sign-in" >  
+                            <img src="pic/signin.svg" alt="sign in">
+                            ورود | ثبت‌ نام</button>
+                    </a>
+                </div>
+                <!-- basket -->
+                <div>
+                    <button class="btn btn-light m-1 sign-in">   
+                        <img src="pic/basket.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------------------------- -->
+                <!-- 3 imgs (heart- sign in and basket) for md and sm screens -->
+               <div class="top-menu d-flex d-sm-block d-md-block d-lg-none ">
+                    <div class="d-flex gap-1">
+                        <!-- heart icon -->
+                        <div>
+                            <a href="#">
+                            <button class=" btn btn-light  sign-in" ><img src="pic/heart.svg" alt="sign in"> </button>
+                             </a>
+                        </div>
+                         <!-- basket img -->
+                        <div>
+                            <a href="">
+                                <button class="btn btn-light  sign-in"><img src="pic/basket.svg" alt=""></button>
+                            </a>
+                        </div>
+                        <!-- sign in img -->
+                        <div>
+                            <a href="sign-in.html">
+                            <button class=" btn btn-light  sign-in" ><img src="pic/signin.svg" alt="sign in"> </button>
+                             </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>      
+     </nav>
+     <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+       <!-- متن بالای عکس و مشخصات -->
+    <div class="d-none d-sm-none d-lg-flex mt-2 d-flex p-3 justify-content-between">
+        <div class="top-text w-50 d-flex gap-3 p-1">
+            <a class="text-decoration-none top-text" href="tamrin.html"> صباتک </a>
+            <a class="text-decoration-none  top-text" href=""> / </a>
+            <a class="text-decoration-none top-text" href="">موبایل</a>
+            <a class="text-decoration-none top-text " href=""> / </a>
+            <a class="text-decoration-none top-text" href="">گوشی موبایل </a>
+        </div>
+        <div class=" d-flex gap-4">
+            <a href="#" class="text-decoration-none top-text d-flex gap-1">
+                <p>ثبت آگهی در پیندو</p>
+                <i class="bx bx-edit-alt mt-1"></i>
+            </a>
+            <a href="#" class="d-flex text-decoration-none top-text gap-1">
+                <p> فروش در صباتک</p>
+                <i class="bx bx-home-smile "></i>
+            </a>
+           
+        </div>      
+    </div>
+<!-- --------------------------------- main up div for desktop ------------------------ -->
+      <div class=" w-100  d-flex mt-3 justify-content-center">
+        <div class="w-25  d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <img class="w-100" src="ax/iphone16.webp" alt="iphone16">
+
+            <!------- buttom imgs ------->
+
+     <div class=" d-flex justify-content-around gap-2 m-2  p-2">
+       <div ><a href="#"><img class="border rounded-2  w-100" src="ax/iphone16-colors.webp" alt="iphone16-colors"></a></div>
+       <div ><a href="#"><img class="border rounded-2  w-100" src="ax/iphone16-pink.webp" alt=""></a></div>
+       <div ><a href="#"><img class="border rounded-2  w-100" src="ax/iphone16-purple.webp" alt=""></a></div>
+      </div>
+    </div>
+<!-- --------------------------------- matn for desktop----------------------------------------- -->
+        <div class=" w-75  ">
+            <div class="w-100 d-none d-sm-none d-md-none d-lg-block d-xl-block justify-content-between">
+                <div class="w-100 d-flex gap-2 text-secondary">
+                    <a class="text-decoration-none " href="#">  گوشی موبایل </a>
+                    <a class="text-decoration-none " href="#"> / </a>
+                    <a class="text-decoration-none " href="#">اپل</a>
+                </div>
+                <h4 class="mt-3 d-none d-sm-none d-md-none d-lg-block d-xl-block">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده</h4>
+                <div class="w-75 mt-3 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <p class="eng-descrip ">
+                        Apple iPhone 16 CH Dual SIM Storage 128GB And RAM 8GB Mobile Phone - registered
+                    </p> 
+                </div>
+                
+
+                <!-- ------------------------- دیو کلی سمت چپ  ---------------------------- -->
+                     <div class=" justify-content-evenly p-2 d-none d-sm-none d-md-none d-lg-flex">
+                        <div class=" w-50">
+                            <img class="w-100" src="pic/star.png" alt="">
+                            <div class="mt-2">
+                                <h3>رنگ : مشکی </h3>
+                                <div class=" d-flex color-pic justify-content-around mt-4">
+                                    <a href="#" id="color-choose">
+                                        <img src="color/black.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="color/purple.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="color/pink.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="color/white.png" alt="">
+                                    </a>
+                                </div>
+                                <!----------------------------- bimeh --------------------- -->
+                                <div class="container mt-4 d-none d-sm-none d-md-none d-lg-block">
+                                    <h2 class="mb-4">بیمه</h2>
+                                    <div class=" card mb-4">
+                                        <div class=" card-body align-items-md-center">
+                                            <div class=" d-flex form-check gap-3">
+                                                <input class="form-check-input" type="checkbox"  id="insuranceCheck">
+                                              <!--------- bimeh digital text -->
+                                                <div class=" w-100 ">                                                  
+                                            <div class=" mb-3 mb-md-0 ">
+                                                <h5 class="card-title">بیمه تجهیزات دیجیتال - بیمه سامان</h5>
+                                            </div>
+                                            <!------  gheymate bimeh  ------->
+                                            <div class=" d-flex gap-3 mb-3 mb-md-0">
+                                                <del class="text-muted">۱,۴۷۰,۷۰۰ تومان</del>
+                                                <p class="mb-0">۷۳۵,۹۰۰ تومان</p>
+                                                <span class="badge bg-danger">۵۰٪</span>
+                                            </div>
+                                         </div>
+                                             <div class=" d-flex m-auto">
+                                                <i class="bx bx-chevron-left mt-1"></i>               
+
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!-- --------------------------- ویژگی ها -------------------------------- -->
+                            
+                                    <h2 class="mb-4">ویژگی‌ها</h2>
+                                    <div class="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3 mb-4 text-center d-lg-flex d-md-flex d-none">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted overflow-hidden">نسخه سیستم عامل</h6>
+                                                    <hr>
+                                                    <p class="card-text">iOS 15</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted">فناوری صفحه نمایش</h6>
+                                                    <hr>
+                                                    <p class="card-text">Super Retina  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted">ریجن</h6>
+                                                    <hr>
+                                                    <p class="card-text">چین</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted text-center">اندازه</h6>
+                                                    <hr>
+                                                    <p class="card-text">6.1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted">رزولوشن دوربین </h6>
+                                                    <hr>
+                                                    <p class="card-text">12 مگاپیکسل</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h6 class="card-subtitle mb-2 text-muted">اقلام همراه</h6>
+                                                    <hr>
+                                                    <p class="card-text"> شارژر، دفترچه ...  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            <!-- -------------------- مشاهده بیشتر ویژگی ها -------------- -->
+                                    <div class=" text-center mb-4 d-xl-flex d-lg-none d-md-none justify-content-around mt-5  ">
+                                        <div class="">
+                                           <img class="h-line" src="pic-category/hor-line.png" alt="">
+                                        </div>
+                                        <div class="">
+                                            <button class="btn btn-outline-primary d-flex m-auto justify-content-center">
+                                        
+                                                <p class="mb-0">مشاهده همه ویژگی‌ها</p>       
+                                                <i class="bx bx-chevron-left mt-1"></i>               
+                                             
+                                        </button>
+                                       
+                                        </div>
+                                        <div class="">
+                                            <img class="h-line" src="pic-category/hor-line.png" alt="">
+                                       </div>                                       
+                                   </div>
+                                    
+                            
+                                    <div class="alert-secondary rounded-2 p-4 d-xl-flex d-lg-none d-md-none gap-2 mb-3" >
+                                        <i class="bx bxs-info-circle mt-1 "  ></i>امکان برگشت کالا در گروه موبایل با دلیل "انصراف از خرید" تنها در صورتی مورد قبول است که پلمپ کالا باز نشده باشد. تمام گوشی‌های صباتک ضمانت رجیستری دارند. 
+                                    </div>                                                      
+                                </div>
+                            </div>
+                        </div>
+                        <!-- left cadr -->
+                        <div class=" ">
+                            <div class=" rounded-4 p-1 border text-center">
+                                <h3 class="mt-3 "> فروشنده </h3>
+                                <div class="d-flex gap-2 justify-content-center mt-3"> 
+                                    <img class="store-img" src="new-pic/store-regular-36.png" alt="">
+                                    <h5>بازرگانی سبز</h5>
+                                </div>
+                                <hr class="w-75 m-auto mt-2">
+                                <div class=" d-flex justify-content-around">
+                                    <div class= "font bg-white mt-4 text-danger text-decoration-line-through "> 86,999,000 تومان</div>
+                                    <div ><span class="font d-block mt-4 text-center "> 85,360,000 تومان</span></div>
+                                </div>
+                                <div class=" style mt-3">
+                                    <div class="overflow-hidden">
+                                        ...
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary m-4">افزودن به سبد خرید </button>
+                                <div class="p-3 d-flex gap-1 ">
+                                    <div class="w-100 d-flex ">
+                                        <img class=" m-1" src="new-pic/garanty.svg" alt="">
+                                        <p class="garanty m-1">گارانتی اصالت و سلامت فیزیکی کالا</p>
+                                    </div>
+                                </div>
+                                <hr class="w-75 m-auto ">
+                                <div class=" d-flex mt-3"> 
+                                    <p class="m-auto d-flex gap-2"> 
+                                        <i class="fa fa-truck" style="font-size: 21px;"></i>ارسال صباتک
+                                        <i class="bx bx-chevrons-left " style="font-size:20px;"></i>
+                                    </p>  
+                                </div>
+                                <div class=" d-flex m-auto mt-3 p-3">
+                                    <p class=" d-flex gap-2 m-auto">
+                                        <i class="bx bx-package" style="font-size: 21px;"></i>
+                                        ارسال رایگان                                   
+                                    <i class="bx bx-chevrons-left" style="font-size:20px;"></i>
+                                </p>
+                                </div>
+                                <hr class="w-75 m-auto ">
+                                <div class=" justify-content-center d-flex p-2 gap-1">
+                                    <img class="d-block" src="pic/club-point.svg" alt="">
+                                    <p class="mt-3" >۱۵۰ امتیاز صباتک
+                                        <i class="bx bx-info-circle" > </i>
+                                    </p>
+                                </div>                           
+                            </div>
+                            <!-- فرآیند قیمت گزاری  -->
+                            <div class=" d-flex  rounded-3  border mt-2">
+                                <div class="d-flex gap-2 mt-3 m-auto">
+                                    <i class="bx bx-info-circle mt-1" > </i>
+                                    <p>
+                                     فرآیند قیمت‌گذاری و نظارت بر قیمت
+                                    </p>       
+                                    <i class="bx bx-chevron-left mt-1"></i>               
+                                </div>
+                           </div>
+
+                        </div>
+                    </div>                                       
+                </div>       
+            </div>              
+        </div>
+        <!-- ----------------------- top div for mobile ------------------------>
+        <div class=" d-flex d-sm-flex d-md-flex d-lg-none d-xl-none justify-content-center mt-4">
+            <div class=" d-block ">
+                <img class="img-mob d-block m-auto" src="ax/iphone16.webp" alt="iphone16">
+                <hr class="w-75 m-auto mt-4 mb-4">
+    
+                <!------- buttom imgs ------->
+    
+                <div class=" d-flex justify-content-around gap-2 m-3  p-2 mt-2">
+                    <div >
+                        <a href="#">
+                            <img class="border rounded-2  w-75" src="ax/iphone16-colors.webp" alt="iphone16-colors">
+                        </a>                 
+                    </div>
+                    <div >
+                        <a href="#">
+                            <img class="border rounded-2  w-75" src="ax/iphone16-pink.webp" alt="">
+                        </a>
+                    </div>
+                    <div >
+                        <a href="#">
+                            <img class="border rounded-2  w-75" src="ax/iphone16-purple.webp" alt="">
+                        </a>                  
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!------------------ اسم گوشی - تیتر-------- -->
+         <div class=" w-100 p-2 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+            <div class="w-100 d-flex gap-2 text-secondary p-2 ">
+                <a class="text-decoration-none " href="#">  گوشی موبایل </a>
+                <a class="text-decoration-none " href="#"> / </a>
+                <a class="text-decoration-none " href="#">اپل</a>
+            </div>
+            <h5 class="mt-3 d-block d-sm-block d-md-block d-lg-none d-xl-none ">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده</h5>
+            <div class="w-75 mt-3 d-block d-sm-block d-md-block d-lg-none d-xl-none ">
+                <p class="eng-descrip ">
+                    Apple iPhone 16 CH Dual SIM Storage 128GB And RAM 8GB Mobile Phone - registered
+                </p> 
+            </div>           
+         </div>
+         <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+            <img class="star-img" src="pic/star.png" alt="">
+         </div>
+         <div class=" m-3">
+            <div class="row row-cols-6 g-2 mb-4 text-center d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted overflow-hidden"> سیستم عامل</h6>
+                            <hr>
+                            <p class="card-text">iOS 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted"> صفحه نمایش</h6>
+                            <hr>
+                            <p class="card-text"> Retina  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">ریجن</h6>
+                            <hr>
+                            <p class="card-text">چین</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted text-center">اندازه</h6>
+                            <hr>
+                            <p class="card-text">6.1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <button class="btn btn-outline-primary d-flex m-auto justify-content-center">                                       
+                        <p class="mb-0"> همه ویژگی‌ها</p>       
+                        <i class="bx bx-chevron-left mt-1"></i>                                   
+                </button>
+              </div>                         
+            </div>
+         </div>
+
+
+         <hr>    
+        <!-- ------------------------------------------------------------- -->
+         <!-- icon -->
+         <div class=" d-flex d-md-flex  text-secondary justify-content-around mt-3">
+            <div class="text-center">
+                <img src="footer/express-delivery.svg" alt="">
+                <p class="">امکان تحویل اکسپرس</p>
+            </div>
+            <div class="text-center">
+                <img src="footer/cash-on-delivery.svg" alt="">
+                <p>امکان پرداخت در محل</p>
+            </div>
+            <div class="text-center">
+                <img src="footer/support.svg" alt="">
+                <p> ۷ روز هفته، ۲۴ ساعته</p>
+            </div>
+            <div class="text-center d-none d-sm-block">
+                <img src="footer/days-return.svg" alt="">
+                <p>۷ روز ضمانت بازگشت </p>
+            </div>
+            <div class="text-center d-none d-sm-block">
+                <img src="footer/original-products.svg" alt="">
+                <p>ضمانت اصل بودن کالا</p>
+            </div>
+        </div>
+        <hr class="mb-5">
+        <!-- ----------------------------------------------------------- -->
+         <!-- نظرات -->
+      <section class="col-12 col-sm-12 col-md-12 d-md-block d-sm-block d-lg-none" id="sec2">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a data-bs-toggle="tab" class="nav-link active text-secondary" href="#vijegi">ویژگی ها</a>
+          </li>
+          <li class="nav-item">
+            <a data-bs-toggle="tab" class="nav-link text-secondary" href="#nazarat">نظرات</a>
+          </li>
+          <li class="nav-item">
+            <a data-bs-toggle="tab" class="nav-link text-secondary" href="#moghayese">مقایسه</a>
+          </li>
+        </ul>
+        <div class="tab-content w-100 position-relative">
+          <div class="tab-pane active show fade d-flex p-md-5 p-1 p-sm-2 flex-wrap" id="vijegi">
+            <div class="col-12 col-sm-12 col-md-4 mb-4 mt-3">
+              <span id="span-vijegi"> مشخصات کلی </span>
+            </div>
+            <ul class="col-6 col-sm-6 col-md-4 list-group">
+              <li class="list-group-item">نوع گوشی موبایل</li>
+              <li class="list-group-item">دسته بندی</li>
+              <li class="list-group-item">مدل</li>
+              <li class="list-group-item">زمان معرفی</li>
+              <li class="list-group-item">ابعاد</li>
+            </ul>
+            <ul class="col-6 col-sm-6 col-md-4 list-group">
+              <li class="list-group-item">سیستم عامل iOS</li>
+              <li class="list-group-item">پرچم‌دار</li>
+              <li class="list-group-item">iPhone 16 CH</li>
+              <li class="list-group-item">۱۴ سپتامبر ۲۰۲4</li>
+              <li class="list-group-item">۴۶.۷x۷۱.۷.۶۵ میلی‌متر</li>
+            </ul>
+          </div>
+          <!-- ------------------------------------------------------------ -->
+          <div class="tab-pane fade d-flex position-absolute top-0 w-100 flex-wrap" id="nazarat">
+          <!-- -------------- نظر سحر مرادی ------------------->
+            <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <!-- ax karbar -->
+              <img src="pic/p4.png" alt="" class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro" />
+              <div class="col-8 m-3 p-3">
+                <h4 class="w-75"> سحر مرادی</h4>
+                <p class="w-75">
+                  برای برادرم گرفتم خوب بود فقط نگهداری شارژش یکم پایینه
+                </p>
+                <!-- ax emtiazat -->
+                <img src="pic/Screenshot 1403-09-08 at 19.21.54.png" alt="" class="w-25"/>
+              </div>
+
+            </div>
+            <!-- ------------------------ نظر حسین احمدی ---------------------------- -->
+
+            <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <hr class="mb-2">
+
+              <!-- ax karbar -->
+              <img src="pic/p3.webp" alt="" class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro"/>
+              <div class="col-8 m-3 p-3">
+                <h4 class="w-75">حسین احمدی</h4>
+                <p class="w-75">
+                  رنگبندیاش خیلی متنوع و خوبن ولی رنگ مشکیشو گرفتم اصلا یچیز دیگس
+                </p>
+                <!-- ax emtiazat -->
+                <img
+                  src="pic/Screenshot 1403-09-08 at 19.21.54.png"
+                  alt=""
+                  class="w-25"
+                />
+              </div>
+            </div>
+            <!-- -------------------- ---- نظر علی امیدی  ---------------------- -->
+            <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <!-- ax karbar -->
+              <img
+                src="pic/p2.jpg"
+                alt=""
+                class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro"
+              />
+              <div class="col-8 m-3 p-3">
+                <h4 class="w-75">علی امیدی</h4>
+                <p class="w-75">
+                  واقعا از لحاظ قیمت نسبت به بقیه جاها خیلی بهتره. حتما بهتون پیشنهاد میکنم دوستان
+
+                </p>
+                <!-- ax emtiazat -->
+                <img
+                  src="pic/Screenshot 1403-09-08 at 19.21.54.png"
+                  alt=""
+                  class="w-25"
+                />
+              </div>
+            </div>
+            <!-- -------------- نظر ساحل موسوی ------------------->
+            <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <!-- ax karbar -->
+              <img src="pic/p5.avif" alt="" class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro" />
+              <div class="col-8 m-3 p-3">
+                <h4 class="w-75"> ساحل موسوی</h4>
+                <p class="w-75">
+                  همه میدونن که خیلی عالیه ممنون از شما
+                </p>
+                <!-- ax emtiazat -->
+                <img src="pic/Screenshot 1403-09-08 at 19.21.54.png" alt="" class="w-25"/>
+              </div>
+            </div>
+             <!-- -------------- نظر مکس امینی ------------------->
+             <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <!-- ax karbar -->
+              <img src="pic/p6.jpg" alt="" class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro" />
+              <div class="col-8 m-3 p-3">
+                <h4 class="w-75"> مکس امینی</h4>
+                <p class="w-75">
+                  عملکرد گوشی در اجرای برنامه عالی کیفیت دوربین هم عالیه
+                  از تحویل بموقع  صباتک متشکرم
+                </p>
+                <!-- ax emtiazat -->
+                <img src="pic/Screenshot 1403-09-08 at 19.21.54.png" alt="" class="w-25"/>
+              </div>
+            </div>
+            <!-- -------------------------- نظر صبا صادقی ----------------------- -->
+            <div class="border col-12 col-sm-12 col-md-6 d-flex">
+              <!-- ax karbar -->
+              <img src="pic/p1.jpeg" alt="" class="m-3 w-25 d-block img-thumbnail col-10 col-sm-10 m-auto imgs-pro"/>
+              <div class=" col-8 m-3 p-3">
+                <h4 class="w-75">صبا صادقی</h4>
+                <p class="w-75">
+                  من این گوشی رو یکماه قبل خریدم ، واقعا خیلی خوبه خیلی راضیم
+                  ازش.حتما بهتون پیششنهادش میکنم
+                </p>
+                <!-- ax emtiazat -->
+                <img src="pic/Screenshot 1403-09-08 at 19.21.54.png" alt="" class="w-25"/>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------  قسمت مقایسه ------------------------------- -->
+          <div class="mt-3 tab-pane fade position-absolute top-0 w-100 d-flex justify-content-around flex-wrap" id="moghayese">
+            <!----------------- مقایسه اولین گوشی -------------->
+            <div class=" card col-10 col-sm-10 col-md-5 col-lg-4 m-2">
+              <h4 class="card-header">مقایسه iphone13</h4>
+              <div class="card-body">
+                <img src="pic/apple13.webp" class="card-img w-50 d-block m-auto" alt="" />
+                <ul>
+                  <li>
+                    <span>اندازه</span>
+                    <span>6.1 اینچ</span>
+                  </li>
+                  <li>
+                    <span>فرکانس پردازنده‌ مرکزی </span>
+                    <span> ۳.۳۹ گیگاهرتز</span>
+                  </li>
+                  <li>
+                    <span>پردازنده‌ گرافیکی</span>
+                    <span>Adreno ۷۵۰ GPU</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-primary col-5 d-block">خرید</button>
+                <button class="btn btn-danger col-6 d-block">
+                  مشاهده جزئیات
+                </button>
+              </div>
+            </div>
+            <!-- ----------------مقایسه دومین گوشی  ----------------------- -->
+            <div class=" card col-10 col-sm-10 col-md-5 col-lg-4 m-2">
+              <h4 class="card-header">مقایسه iphone11</h4>
+              <div class="card-body">
+                <img src="pic/iphone11.webp" class="card-img w-50 d-block m-auto" alt=""/>
+                <ul>
+                  <li>
+                    <span>اندازه</span>
+                    <span>6.1 اینچ</span>
+                  </li>
+                  <li>
+                    <span>فرکانس پردازنده‌ مرکزی </span>
+                    <span> ۳.۳۹ گیگاهرتز</span>
+                  </li>
+                  <li>
+                    <span>پردازنده‌ گرافیکی</span>
+                    <span>Adreno ۷۵۰ GPU</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-primary col-5 d-block">خرید</button>
+                <button class="btn btn-danger col-6 d-block">
+                  مشاهده جزئیات
+                </button>
+              </div>
+            </div>
+            <!-- -------------- مقایسه سومین گوشی ---------------------- -->
+            <div class="card col-10 col-sm-10 col-md-5 col-lg-4 m-2">
+              <h4 class="card-header">مقایسه iphone11</h4>
+              <div class="card-body">
+                <img src="pic/iphone11-black.webp" class="card-img w-50 d-block m-auto" alt="" />
+                <ul>
+                  <li>
+                    <span>اندازه</span>
+                    <span>6.1 اینچ</span>
+                  </li>
+                  <li>
+                    <span>فرکانس پردازنده‌ مرکزی </span>
+                    <span> ۳.۳۹ گیگاهرتز</span>
+                  </li>
+                  <li>
+                    <span>پردازنده‌ گرافیکی</span>
+                    <span>Adreno ۷۵۰ GPU</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-primary col-5 d-block">خرید</button>
+                <button class="btn btn-danger col-6 d-block">
+                  مشاهده جزئیات
+                </button>
+              </div>
+            </div>
+            <!--------------- مقایسه چهارمین گوشی -----------  -->
+            <div class="card col-10 col-sm-10 col-md-5 col-lg-4 m-2">
+              <h4 class="card-header">مقایسه iphone11</h4>
+              <div class="card-body">
+                <img src="pic/iphone11-purple.webp" class="card-img w-50 d-block m-auto" alt=""/>
+                <ul>
+                  <li>
+                    <span>اندازه</span>
+                    <span>6.1 اینچ</span>
+                  </li>
+                  <li>
+                    <span>فرکانس پردازنده‌ مرکزی </span>
+                    <span> ۳.۳۹ گیگاهرتز</span>
+                  </li>
+                  <li>
+                    <span>پردازنده‌ گرافیکی</span>
+                    <span>Adreno ۷۵۰ GPU</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-primary col-5 d-block">خرید</button>
+                <button class="btn btn-danger col-6 d-block">
+                  مشاهده جزئیات
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

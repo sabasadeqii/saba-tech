@@ -1,0 +1,188 @@
+@font-face {
+    font-family: bnazanin ;
+    src: url(font/B\ Nazanin-.ttf);
+}
+@font-face {
+    font-family: bbnazanin;
+    src: url(font/B\ Nazanin\ Bold-.ttf);
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    direction: rtl;
+    font-family: bnazanin !important;
+    font-size: 18px !important;
+    overflow-x: hidden !important;
+}
+/* ---------------- banner ------------- */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.banner img {
+  width: 100%;
+  height: 2.5rem;
+}
+/* --------------------- */
+nav
+{
+    background-color: #fdfdfd;
+}
+/* ---- search icon ----- */
+#search-icon {
+  top: 45%;
+ right: 15px; 
+  transform: translateY(-50%);
+}
+/*--- offcanvas - hamburger-- */
+#menu
+{
+    background-color:#fdfdfd;
+}
+/* -- img logo -- */
+.img {
+    width: 90px;
+    height: 40px;
+  }
+  .pic-category
+  {
+    width: 25px;
+    height: 25px;
+  }
+  /* --font bold - register --- */
+  .top-menu , .font
+  {
+    font-family:bbnazanin;
+    font-size: 20px;
+  }
+/* ----- category dropdowm menu ------- */
+
+
+/* ------------- دسته بندی های پر بازدید ------------ */
+.p-category
+{
+  /* border-bottom: 2px solid black; */
+  font-family: bbnazanin !important;
+  font-size: 25px;
+  color: #1d1c1c;
+}
+#p-category-red
+{
+color: red;
+font-family: bbnazanin !important;
+}
+.vertical {
+  border-left: 2px solid #3b3c3d;
+  height: auto;
+}
+.icon-img
+{
+  width: 50px;
+  height: 50px;
+}
+.d-category
+{
+  font-family: bbnazanin !important;
+  font-size: 20px !important;
+}
+/* --------------slider------ */
+.button-slider
+{
+    color: black  !important;
+}
+/* ----swiper for brands ------ */
+.swiper {
+  width: 100%;
+  height: auto; 
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100px; 
+  height: auto; 
+  object-fit: cover;
+}
+/* ------- swiper for parchamdaran --- */
+.swiper1 {
+  width: 100%;
+  height: auto; 
+}
+
+
+
+
+.sec-div
+{
+   top: 25%;
+    left: 5%;
+}
+/* -------- first div blue  ------ */
+.off-img
+{
+    width: 132px;
+    height: 132px;
+}
+.arrow
+{
+ width: 15px; 
+ height: 15px;  
+ 
+}
+/* gray background */
+.back
+{
+  background-color: #F6F5F5;
+}
+/* -------- */
+section div:nth-of-type(1)
+{
+    background-color:#c6e7f5;
+}
+.special-font
+{
+  font-size: 25px;
+}
+/* --توضیحات قرمز رنگ -- */
+.description {
+  color: red;
+  width: 90%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ------- icon heart ------ */
+.icon-heart {
+  font-size: 20px;
+  color:#1e376c;
+ 
+}
+
+.icon-heart:hover {
+  color: red;
+  cursor: pointer;
+}
+/* ------- footer ----- */
+.img-etemad
+{
+  width: 100px;
+  height: 100px;
+}
+/* --- copyright eng text --- */
+.copyright
+{
+  direction: ltr !important;
+}
+
+
+

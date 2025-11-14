@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tamrin.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+</head>
+<body>
+    <!-- -------------------------- banner ------------------------------- -->
+    <div class="banner">
+        <img src="pic/banner.jpg" alt="" class="img-fluid d-none d-md-block">
+        <img src="pic/banner responsive.webp" alt="" class="img-fluid d-block d-md-none">
+    </div>
+    <!-- ----------------------- navbar menu ---- ------------------->
+     <nav class="navbar navbar-expand-lg border-bottom shadow ">
+        <!---------- div top menu ----------->
+         <div class="container-fluid d-flex d-sm-flex d-md-flex d-lg-block">
+             <!------- icon hamburgur ----------->
+             <button class="navbar-toggler d-block d-sm-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menu">             
+                <span class="navbar-toggler-icon"></span>
+             </button>
+          <!-- -----------------------------logo--------------------------------------- -->
+            <!-- img logo desktop -->
+             <div class=" gap-3  d-lg-flex d-md-flex mt-2 ">
+                <div class="m-auto">
+                    <a href="#" class="">
+                        <img class="img d-flex d-lg-flex d-md-flex " src="pic/logo copy.png" alt="logo">
+                    </a>
+                </div>
+                <!-------------------------- search box with search icon ------------------------>
+                <div class=" w-75 d-none d-lg-flex ">
+                    <div class=" w-100 position-relative m-auto p-1 ">
+                        <i class="bx bx-search position-absolute " id="search-icon"></i>
+                        <input type="search" class="w-75 rounded-3  ps-5 border" placeholder="جستجو ... ">
+                    </div>                                       
+                </div>
+                <!--------------------- sign in/register for desktop --------------------->
+             <div class="top-menu p-1 d-none d-sm-none d-md-none d-lg-none gap-1 d-xl-flex">
+                <div class="">
+                    <a href="sign-in.html">
+                        <button class="w-100 btn btn-light m-1 sign-in" >  
+                            <img src="pic/signin.svg" alt="sign in">
+                            ورود | ثبت‌ نام
+                        </button>
+                    </a>                  
+                </div>
+                <!-- basket -->
+                <div>
+                    <button class="btn btn-light m-1 sign-in">   
+                        <img src="pic/basket.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- ------------------- sign in without text for lg screen ----------------->
+            <div class="top-menu p-1 d-none d-sm-none d-md-none d-lg-flex gap-1 d-xl-none">
+                <div class="">
+                    <a href="sign-in.html">
+                        <button class="w-100 btn btn-light m-1 sign-in" >  
+                            <img src="pic/signin.svg" alt="sign in">
+                        </button>
+                    </a>                  
+                </div>
+                <!-- basket -->
+                <div>
+                    <button class="btn btn-light m-1 sign-in">   
+                        <img src="pic/basket.svg" alt="">
+                    </button>
+                </div>
+            </div>
+             </div>     
+          <!-- ------------------------- offcanvas - hamburger -------------------------- -->
+             <div class=" offcanvas offcanvas-start d-block d-sm-block d-lg-none " id="menu">
+                <div class="offcanvas-header">
+                    <img class="w-25 m-auto" src="pic/logo copy.png" alt="logo">
+                </div>
+              <hr class="w-75 m-auto border-1">
+                <div class="offcanvas-body">
+                    <div class="accordion" id="hamburger">
+                    <!-- category -->
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <a class="accordion-button collapsed text-decoration-none" data-bs-toggle="collapse" href="#subcategory">
+                                <img class="pic-category" src="hamburger-icon/icons8-category-50.png" alt="">
+                                <span class="m-3 top-menu"> دسته بندی کالاها </span>
+                            </a>
+                        </div>
+                         <ul class="accordion-collapse collapse  list-group" id="subcategory" data-bs-parent="#hamburger">
+                            <li class="list-group-item list-group-item-action">
+                                <a class="text-decoration-none text-black d-flex justify-content-between" href="#">     
+                                    <span class="d-block">موبایل</span>
+                                     <span class="badge bg-success"> 100 + </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> دوربین </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> لپتاپ </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> هدفون </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> ساعت </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> اسپیکر </a></li>
+                       </ul>
+                    </div>
+                    <!-- popular -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <a class="accordion-button collapsed text-decoration-none" data-bs-toggle="collapse" href="#subpopular">
+                                <img class="pic-category" src="hamburger-icon/icons8-star-50.png" alt="">
+                                <span class="m-3 top-menu"> پرفروش ترین ها  </span>
+                            </a>
+                        </div>
+                         <ul class="accordion-collapse collapse  list-group" id="subpopular" data-bs-parent="#hamburger">
+                            <li class="list-group-item list-group-item-action">
+                                <a class="text-decoration-none text-black d-flex justify-content-between" href="#"> 
+                                   
+                                    <span class="d-block">گوشی موبایل شیائومی </span>
+                                     <span class="badge bg-danger"> 5% </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> دوربین </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> لپتاپ </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> هدفون </a></li>
+                        </ul>
+                    </div>
+                       <!-- discount -->
+                       <div class="accordion-item">
+                        <div class="accordion-header">
+                            <a class="accordion-button collapsed text-decoration-none" data-bs-toggle="collapse" href="#subdiscount">
+                                <img class="pic-category" src="hamburger-icon/icons8-discount-50.png" alt="">
+                                <span class="m-3 top-menu"> تخفیف ها  </span>
+                            </a>
+                        </div>
+                         <ul class="accordion-collapse collapse  list-group" id="subdiscount" data-bs-parent="#hamburger">
+                            <li class="list-group-item list-group-item-action">
+                                <a class="text-decoration-none text-black d-flex justify-content-between" href="#"> 
+                                    
+                                    <span class="d-block">موبایل</span>
+                                     <span class="badge bg-success"> 100 + </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> دوربین </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> لپتاپ </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> هدفون </a></li>
+                        </ul>
+                    </div>
+                    <!-- branches -->
+                    <div class="accordion-item">
+                        <div class="accordion-header"> 
+                            <a class="accordion-button collapsed text-decoration-none" data-bs-toggle="collapse" href="#subbranch">
+                                <img class="pic-category" src="hamburger-icon/icons8-location-50.png" alt="">
+                                <span class="m-3 top-menu"> شعب </span>
+                            </a>
+                        </div>
+                         <ul class="accordion-collapse collapse  list-group" id="subbranch" data-bs-parent="#hamburger">
+                            <li class="list-group-item list-group-item-action">
+                                <a class="text-decoration-none text-black d-flex justify-content-between" href="#"> 
+                                   
+                                    <span class="d-block">موبایل</span>
+                                     <span class="badge bg-success"> 100 + </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> دوربین </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> لپتاپ </a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-decoration-none text-black" href="#"> هدفون </a></li>
+                        </ul>
+                    </div>   
+                  </div>
+                </div>
+            </div>
+            <!---------------------------------------- top menu--------------------------------- -->
+            <div class="collapse navbar-collapse top-menu mt-2">
+                <ul class="navbar-nav m-auto gap-3">
+                    <!-- category -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1 " href="#" >
+                            <img class="pic-category" src="pic/menu-regular-24.png" alt="category">
+                            <p class="m-auto">دسته بندی کالاها</p>
+                        </a>
+                    </li>
+                    <!-- popular -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-fire-48.png" alt="category">
+                            <p class="m-auto ">پرفروش ترین ها</p>
+                        </a>
+                    </li>
+                    <!-- off -->
+                    <li class="nav-item  ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-discount-48.png" alt="category">
+                            <p class="m-auto "> تخفیف ها</p>
+                        </a>
+                    </li>
+                    <!-- question -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-support-48.png" alt="category">
+                            <p class="m-auto ">پرسش و پاسخ</p>
+                        </a>
+                    </li>
+                    <!-- branches -->
+                    <li class="nav-item ">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-location-48.png" alt="category">
+                            <p class="m-auto "> شعب </p>
+                        </a>
+                    </li>
+                    <!---- about ---->
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-1" href="#" >
+                            <img class="pic-category" src="pic-category/icons8-about-us-48.png" alt="category">
+                            <p class="m-auto "> درباره ما </p>
+                        </a>
+                    </li>
+                </ul>
+               
+            </div>
+             
+            <!-- ---------------------------------------------------------------------------- -->
+                <!-- sign in for md and sm screens -->
+               <div class="top-menu d-flex d-sm-block d-md-block d-lg-none ">
+                    <div class="d-flex gap-1">
+                        <div>
+                            <a href="sign-in.html">
+                            <button class=" btn btn-light  sign-in" ><img src="pic/signin.svg" alt="sign in">ورود | ثبت‌ نام</button>
+                             </a>
+                        </div>
+                         <!-- basket -->
+                        <div>
+                            <button class="btn btn-light  sign-in"><img src="pic/basket.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+     </nav>
+    <!-- -------------------------------------- header ------------------------------------------ -->
+      <header class="w-100  header position-relative ">
+    <!-- ---------------------------slider----------------------------------- -->
+     <!-- valed -->
+     <div id="top-slider" class="w-100 carousel slider carousel-fade  mt-3 m-auto" data-bs-ride="carousel">
+        <!-- img -->
+        <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000"><img class="w-100 d-block" src="slider/banner_SlideBanner_J4pJLH_f224b041-efc7-4f15-90a7-fa5cfe082a98.webp" alt=""></div>
+        <div class="carousel-item" ><img class="w-100 d-block" src="slider/banner_SlideBanner_0dEQ8k_2e8b5a58-b32b-4957-858f-b7449e40119e.webp" alt=""></div>
+        <div class="carousel-item" ><img class="w-100 d-block" src="slider/banner_SlideBanner_cjkDSC_3a3b9ea5-52c5-4385-9755-f111f334af5c.webp" alt=""></div>
+        <div class="carousel-item" ><img class="w-100 d-block" src="slider/banner_SlideBanner_yPX4X2_e5c45796-c8d0-42de-9620-16f16f04eb1d.webp" alt=""></div>
+        <div class="carousel-item" ><img class="w-100 d-block" src="slider/banner_SlideBanner_C7kATE_108308eb-2ed2-41b4-9003-b178e2ebe947.webp" alt=""></div>
+        </div>
+         <!-- ---------slider with circle------ -->
+    <div class="carousel-indicators">
+        <button class="active" data-bs-target="#top-slider" data-bs-slide-to="0" ></button>
+        <button data-bs-target="#top-slider" data-bs-slide-to="1" ></button>
+        <button data-bs-target="#top-slider" data-bs-slide-to="2" ></button>
+        <button data-bs-target="#top-slider" data-bs-slide-to="3" ></button>
+        <button data-bs-target="#top-slider" data-bs-slide-to="4" ></button>
+    </div>        
+        <!----------- slider button ---------->
+        <button class="carousel-control-prev " data-bs-slide="prev" data-bs-target="#top-slider"><span class="carousel-control-prev-icon "></span></button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#top-slider"><span class="carousel-control-next-icon"></span></button>
+
+    </div>
+    
+     </header>
+      <!-- -------------------------------------------------------------------- -->
+          <!-- دسته بندی های پر بازدید -->
+     <div class=" d-flex justify-content-center gap-2 mt-4" >
+        <div class=" mt-2"><img src="pic/h-line.svg" alt=""></div>
+        <p class="p-category">  دسته بندی های </p>
+        <p class="p-category" id="p-category-red"> پر بازدید</p>
+        <div class=" mt-2"><img  src="pic/h-line.svg" alt=""></div>
+      </div>
+      <!-- --------category pic and text---- -->
+      <div class=" mt-3 d-flex justify-content-around flex-wrap m-md-auto d-category ">       
+        <div class=" d-md-flex ">
+            <a href="" class="text-decoration-none text-black ">
+                <img class="icon-img " src="new-pic/icons8-mobile-50.png" alt="">
+                <p class="m-2">موبایل</p>
+            </a>
+        </div>
+        <!-- vertical line -->
+        <div class="vertical"></div>
+        <!-- ------------ -->
+        <div class="d-md-flex ">
+            <a href="" class="text-decoration-none text-black">
+                <img class="icon-img" src="new-pic/icons8-laptop-50.png" alt="">
+                <p class="m-2">لپتاپ</p>
+            </a>
+        </div >
+         <!-- vertical line -->
+         <div class="vertical"></div>
+         <!-- ------------ -->
+        <div class="d-md-flex ">
+            <a href="" class="text-decoration-none text-black">
+                <img class="icon-img" src="new-pic/icons8-airpods-50.png" alt="">
+                <p class="m-2">هدفون</p>
+            </a>       
+        </div>
+         <!-- vertical line -->
+         <div class="vertical"></div>
+         <!-- ------------ -->
+        <div class="d-md-flex ">
+            <a href="" class="text-decoration-none text-black">
+                <img class="icon-img" src="new-pic/icons8-camera-50.png" alt="">
+                <p class="m-2">دوربین</p>
+            </a>   
+        </div>
+      </div>
+      <!---------------------------------- banner ------------------------------>
+<div class="container mx-auto d-flex flex-column flex-lg-row gap-4 p-3 mt-4 ">
+    <div class=" ">
+        <img class="w-100 object-fit-cover rounded-3" src="pic/banner/headphone-banner.webp" alt="banner-headphone">
+    </div>
+    <div class=" ">
+        <img class="w-100 object-fit-cover rounded-3" src="pic/banner/consol-banner.webp" alt="banner-consol">
+    </div>
+    </div>
+    <!-- end of banner -->
+      <!-- -------------------------------------first div blue -------------------------- -->
+ <section class="container-fluid d-flex m-auto mt-4 position-relative p-4 col-12 col-sm-12 col-md-12 rounded-2">
+    <div class=" w-100 rounded-2 ">
+      <div class="d-block rounded-2">
+        <div class="font special-font rounded-2 d-flex m-1">
+          <div class=" w-75 m-2"><p class=" m-2">پرچمداران هوشمند  </p></div>
+           <div class=" w-25 m-2 align-items-center d-flex">
+             <div class="m-auto rounded-2 d-flex"> 
+              <a href="" class=" text-decoration-none text-black"><p class=" m-auto w-100 d-flex">نمایش همه <i class="bx bxs-chevron-left mt-1"></i></p></a> 
+             </div>
+           </div>
+        </div>
+        <!-- --------------------------------------- first div blue item --------------------------------- -->
+        <div class=" justify-content-around p-2  d-flex rounded-2">      
+ <!------------------------ Swiper for parchamdaran items  -------------------->
+  <div class=" swiper1 mySwiper1">
+    <div class="swiper-wrapper d-flex">
+        <!--------------- item 1 - iphone16 -----------------> 
+      <div class="swiper-slide">
+         <div class="bg-white rounded-2 p-2 m-2">
+            <i class="fas fa-heart icon-heart m-2" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+            <img class="w-75 d-block m-auto rounded-3 mt-2" src="ax/iphone16.webp" alt="">
+            <p class="text-center mt-3">گوشی موبایل اپل مدل iPhone 16 CH دو سیم کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت - رجیستر شده </p>
+            <div class="bg-white d-flex justify-content-around mb-3">
+                <div class= "bg-white text-danger text-decoration-line-through mt-4">  86,999,000 تومان </div>
+                <div ><span class="d-block text-center mt-4">  85,360,000 تومان</span></div>
+            </div>    
+            <!--------- buy button --------->
+            <div class="text-center mt-5">
+                <button class="btn btn-primary " type="button" onclick="alert('به سبد خرید افزوده شد');">افزودن به سبد خرید</button>
+            </div>
+        </div>
+      </div>
+<!-- -------- item 2 ------------ -->
+      <div class="swiper-slide">
+    <!-- ------------------------- item 2 ------------------------- -->
+     <!-- item 2 - s24 ultra -->
+       <div class="bg-white  rounded-2 p-2 m-2">
+         <i class="fas fa-heart icon-heart m-2" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+           <img class="w-75 d-block m-auto rounded-3 mt-2" src="ax/s24ultra.webp" alt="">
+             <p class="text-center mt-3">  گوشی موبایل سامسونگ Galaxy S24 Ultra 5G ظرفیت 256 گیگابایت رم 12 گیگابایت - ویتنام</p>
+               <div class="bg-white d-flex justify-content-around mb-3">
+                  <div class= "bg-white mt-4 text-danger text-decoration-line-through">69,999,000تومان</div>
+                    <div ><span class="d-block mt-4 text-center"> 66,999,000تومان</span></div>
+                      </div>     
+                <!-- buy button -->
+                 <div class="text-center mt-5 mb-4">
+                    <button class="btn btn-primary " type="button" onclick="alert('به سبد خرید افزوده شد');">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+<!-- --------------------------------------------------- -->
+      <div class="swiper-slide">
+ <!-- ----------------------item 3------------------------- -->
+   <!-- item 3 - redmi note 13 -->
+     <div class="bg-white rounded-2 p-2 m-2 ">
+       <i class="fas fa-heart icon-heart m-2" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+        <img class="w-75 d-block m-auto rounded-3 mt-2" src="ax/redminote13.webp" alt="">
+          <p class="text-center mt-3">  گوشی موبایل شیائومی مدل Redmi Note 13 4G ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+            <div class="bg-white d-flex justify-content-around ">
+              <div class= "bg-white mt-4 text-danger text-decoration-line-through">11,250,000 تومان</div>
+                <div ><span class="d-block mt-4 text-center"> 10,700,000 تومان </span></div>
+                </div>    
+            <!-- buy button -->
+            <div class="text-center mt-5 mb-4">
+             <button class="btn btn-primary " type="button" onclick="alert('به سبد خرید افزوده شد');">افزودن به سبد خرید</button>
+               </div>
+            </div>
+        </div>
+    <!-- -------------------------------------------------------------- -->
+<div class="swiper-slide">
+<!-- --------------------- item 4 --------------- -->
+   <!-- item 4 - lenovo -->
+ <div class="bg-white  rounded-2 p-2 m-2">
+   <i class="fas fa-heart icon-heart m-2" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+     <img class="w-75 d-block m-auto rounded-3 mt-2" src="ax/lenovo.png" alt="">
+      <p class="text-center mt-3"> لپ تاپ لنوو 15.6 اینچی مدل V15 G4 i5 13420H 8GB 512GB SSD </p>
+       <div class="bg-white d-flex justify-content-around mb-3">
+         <div class= "bg-white text-danger text-decoration-line-through mt-4">33,250,000 تومان</div>
+          <div ><span class="d-block text-center mt-4"> 31,500,000 تومان</span></div>
+           </div>    
+        <!--------- buy button --------->
+      <div class="text-center mt-5">
+         <button class="btn btn-primary " type="button" onclick="alert('به سبد خرید افزوده شد');">افزودن به سبد خرید</button>
+           </div>
+        </div>
+</div>
+<!-- ---------------------------------- -->
+ <div class="swiper-slide">
+  <!-- ---------------- item 5------------------ -->
+    <!-- item 5 - acer aspire -->
+    <div class="bg-white  rounded-2 p-2 m-2 ">
+    <i class="fas fa-heart icon-heart m-2" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+     <img class="w-75 d-block m-auto rounded-3 mt-2" src="ax/acer-aspire.webp" alt="">
+     <p class="text-center mt-3"> لپ‌ تاپ ایسر 15.6 اینچی مدل Aspire 5 A515 i5 13420H 8GB 1TB</p>
+      <div class="bg-white d-flex justify-content-around mb-3">
+       <div class= "bg-white text-danger text-decoration-line-through mt-4">41,500,000 تومان</div>
+        <div ><span class="d-block text-center mt-4 "> 39,499,000تومان</span></div>
+         </div>                                      
+         </div>    
+</div>
+<!-- -------------------------------------------- -->
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>                                                                  
+    </div>      
+   </div>
+  </div>
+</section>
+<!---------------------------------- end of section parchamdaran ------------------------>
+
+<!-- ----------------------- 3 pic mobile --------------- -->
+<div class="container-fluid  text-center mt-3 pb-5">
+    <div class="d-block mx-auto p-4">
+        <h3 class="fw-bold">گوشی موبایل</h3>
+        <img class="" src="pic/red-line.svg" alt="">
+    </div>
+    <div class=" d-flex gap-2 p-1 justify-content-around ">
+        <div class="">
+            <img class=" w-100 rounded-3" src="pic/mobile1.jpeg" alt="">
+        </div>
+        <div class="">
+            <img class="w-100 rounded-3" src="pic/mobile2.jpeg" alt="">
+        </div>
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+            <img class="w-100 rounded-3" src="pic/mobile3.jpeg" alt="">
+        </div>
+    </div>   
+</div>
+<!-- -------------------- mahboob tarin mobile ha ------------ -->
+ <div class="container-fluid  mt-3 back pb-3">
+    <div class="d-flex justify-content-center gap-3 p-4">
+        <img src="pic/h-line.svg" alt="">
+        <span class=" d-flex justify-content-center p-category text-secondary"> محبوب ترین موبایل ها </span>
+        <img src="pic/h-line.svg" alt="">
+    </div>
+    <!-- --- div mahboob tarin mobile ha -->
+    <div class=" d-flex gap-4 p-3 justify-content-center">
+        <!-- item 1 -->
+            <div class="w-25 bg-white rounded-5 p-2">
+                <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+                 <img class="w-50 d-block m-auto rounded-3 mt-2" src="ax/redminote13.webp" alt="">
+                   <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+                   <div class="d-flex align-items-center">
+                    <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                    <div class=" text-center m-3">
+                      <h5 class="text-decoration-line-through text-danger">
+                        5.730.000 تومان
+                      </h5>
+                      <h4 class="fw-bold gap-1">
+                        4.497.000
+                        <span class="fw-bold"> تومان</span>
+                      </h4>
+                    </div>
+                  </div>
+        </div>
+        <!-- item 2 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="ax/redminote13.webp" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex  align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+        <!-- item 3 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="ax/redminote13.webp" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+        <!-- item 4 -->
+        <div class="w-25 bg-white rounded-5 p-2 d-none d-sm-none d-md-none d-lg-none d-xl-block">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="ax/redminote13.webp" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex gap-3  align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+           </div>
+        <!-- -- end of items -->
+    </div>
+ </div>
+ <!-- ----------------------- 3 pic soti tasviri --------------- -->
+<div class="container-fluid  text-center mt-3 pb-5">
+    <div class="d-block mx-auto p-4">
+        <h3 class="fw-bold"> صوتی و تصویری </h3>
+        <img class="" src="pic/red-line.svg" alt="">
+    </div>
+    <div class=" d-flex gap-2 p-1 justify-content-around ">
+        <div class="">
+            <img class=" w-100 rounded-3" src="pic/soti1.jpeg" alt="">
+        </div>
+        <div class="">
+            <img class="w-100 rounded-3" src="pic/soti2.jpeg" alt="">
+        </div>
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+            <img class="w-100 rounded-3" src="pic/soti3.jpeg" alt="">
+        </div>
+    </div>   
+</div>
+<!-- ----------------------- mahboob tarin lavazem janebi ----------------------- -->
+ <div class="back p-3">
+    <div class="d-flex justify-content-center gap-3">
+        <img src="pic/h-line.svg" alt="">
+        <span class=" d-flex justify-content-center p-category text-secondary"> محبوب ترین لوازم جانبی </span>
+        <img src="pic/h-line.svg" alt="">
+    </div>
+    <div class=" mt-3 d-flex justify-content-around p-2 gap-3 ">
+        <!-- item 1 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="pic/janebi-speaker.jpeg" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+        <!-- item 2 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="pic/janebi-saat.jpeg" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+        <!-- item 3 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="pic/janebi-projector.jpeg" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex  align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+        <!-- item4 -->
+        <div class="w-25 bg-white rounded-5 p-2">
+            <i class="fas fa-heart icon-heart m-3" onclick="alert('به لیست علاقمندی ها افزوده شد');"></i>
+             <img class="w-50 d-block m-auto rounded-3 mt-2" src="pic/janebi-speaker2.jpeg" alt="">
+               <p class="text-center mt-2 p-3">  گوشی موبایل شیائومی مدل Redmi Note 13 ظرفیت 256 گیگابایت رم 8 گیگابایت  </p>
+               <div class="d-flex align-items-center">
+                <span class="badge bg-danger rounded-4 m-4 font-monospace "> 10% </span>
+                <div class=" text-center m-3">
+                  <h5 class="text-decoration-line-through text-danger">
+                    5.730.000 تومان
+                  </h5>
+                  <h4 class="fw-bold gap-1">
+                    4.497.000
+                    <span class="fw-bold"> تومان</span>
+                  </h4>
+                </div>
+              </div>
+    </div>
+    <!-- end of janebi items  -->
+    </div>
+ </div>
+
+<!----------------------------------------- brand ha ---------------------------------- -->
+<div class=" mt-4 ">
+    <div class="d-flex justify-content-center gap-3">
+        <img src="pic/h-line-gray.svg" alt="">
+        <span class=" d-flex justify-content-center p-category text-secondary">برندهای برتر</span>
+        <img src="pic/h-line-gray.svg" alt="">
+      </div>
+        <!------- Swiper for brands ------->
+        <div class=" swiper mySwiper mt-4 p-2 overflow-x-hidden">
+            <div class="swiper-wrapper d-flex gap-5">
+                <div class="swiper-slide ">
+                    <img src="brand-pic/anker.png" alt="Image 1">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/apple.png" alt="Image 2">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/samsung.png" alt="Image 3">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/sandisk.png" alt="Image 4">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/sony.png" alt="Image 5">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/xiaomi.png" alt="Image 6">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/anker.png" alt="Image 1">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/apple.png" alt="Image 2">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/samsung.png" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="brand-pic/sandisk.png" alt="Image 4">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="brand-pic/sony.png" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="brand-pic/xiaomi.png" alt="Image 6">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+</div>
+<!-- --- end of brand ha ---- -->
+ <!-- ---------------- matn kharide gooshi ------ -->
+ <div class="container border rounded-3 mt-5 p-4 justify-content-center">
+<div><h3>خرید گوشی</h3></div>
+<div class="mt-3 ">
+    <p>خرید گوشی
+        خرید گوشی و خرید اینترنتی گوشی در این روزها، می‌تواند زمان زیادی از شما بگیرد. در هنگام خرید گوشی موبایل باید به نکات متعددی مانند خرید گوشی موبایل، امکانات گوشی موبایل، ضمانت گوشی موبایل و رجیستری گوشی موبایل در کنار اصالت فروشگاه موبایل دقت کرد. مهم‌‎ترین عامل اثرگذار در تصمیم گیری ما، قیمت روز گوشی موبایل می‌باشد. شما می‌توانید از طریق خرید اینترنتی گوشی از فروشگاه اینترنتی موبایل یا خرید حضوری از شعب صباتک اقدام به خرید گوشی سامسونگ، خرید گوشی شیائومی و سایر برندها کنید.
+        فروشگاه اینترنتی موبایل خرید گوشی موبایل از فروشگاه اینترنتی موبایل، یکی از سریع‌ترین راه‌ها به شمار می‌آید. در زمان خرید اینترنتی گوشی موبایل، باید به نکاتی مانند نشان نماد الکترونیکی، پروتکل SSL و درگاه امن پرداخت فروشگاه اینترنتی توجه کنید. قبل از خرید موبایل، نظرات کاربران را بررسی کنید. این نظرات می‌تواند به شما درک بهتری از تجربه خرید دیگران و کیفیت سرویس‌دهی آن فروشگاه اینترنتی بدهد. مورد بعدی که می‌بایست به آن دقت شود اصالت کالای دیجیتال است.</p>
+</div>
+<div class="m-2">
+<a href="#" class="text-decoration-none">
+    <h4>مشاهده بیشتر</h4>
+</a>
+</div>
+ </div>
+<!-- ----------------------------- پیشنهاد ویژه ------------------------------- -->
+       <!-- <div class="object-fit-contain d-flex m-4 border-primary  bg-danger rounded-2 p-2 ">  
+       <div >
+        <div class=" w-25 rounded-2 ">
+            <img src="pic/Amazings.svg" alt="">
+        </div>
+        <div class="text-center">
+            <img src="pic/Amazing2.svg" alt="">
+        </div>
+        <div class="d-flex ">
+            <p class="m-auto text-white ">مشاهده همه</p>
+            <img class="arrow m-2 " src="pic/arrow.png" alt="">
+        </div>
+       </div>
+       <div class=" d-flex justify-content-around w-100 rounded-2 p-2">
+        <div class="bg-light m-auto d-block " >
+            <div class="m-auto">
+                <img class="off-img" src="pic/lap.webp" alt="">
+            </div>
+            <div>
+                <p>laptop</p>
+            </div>
+        </div>
+        <div class=" d-flex justify-content-around w-100 rounded-2 p-2">
+            <div class="bg-light m-auto d-block " >
+                <div class="m-auto">
+                    <img class="off-img" src="pic/lap.webp" alt="">
+                </div>
+                <div>
+                    <p>laptop</p>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-around w-100 rounded-2 p-2">
+                <div class="bg-light m-auto d-block " >
+                    <div class="m-auto">
+                        <img class="off-img" src="pic/lap.webp" alt="">
+                    </div>
+                    <div>
+                        <p>laptop</p>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-around w-100 rounded-2 p-2">
+                    <div class="bg-light m-auto d-block " >
+                        <div class="m-auto">
+                            <img class="off-img" src="pic/lap.webp" alt="">
+                        </div>
+                        <div>
+                            <p>laptop</p>
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-around w-100 rounded-2 p-2">
+                        <div class="bg-light m-auto d-block " >
+                            <div class="m-auto">
+                                <img class="off-img" src="pic/lap.webp" alt="">
+                            </div>
+                            <div> <p>laptop</p></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div> -->
+    <hr>
+   <!-- -------------------------------------- footer ------------------------------------------------- -->
+    <footer class="container d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <div class=" text-center border p-3 rounded-3 mt-3">
+            <img class="img " src="pic/logo copy.png" alt="">
+        </div>
+        <div class="d-flex justify-content-between w-auto mt-5 ">
+            <div class="d-flex flex-column gap-2 mt-4">
+                <p class="mb-2 text-black"> درباره‌ی صباتک </p>
+                <p class="text-secondary">تماس با ما</p>
+                <p class="text-secondary"> درباره‌ی ما </p>
+                <p class="text-secondary">مجله‌ی صباتک  </p>
+                <p class="text-secondary">شعب</p>
+                <p class="text-secondary">شرایط و قوانین</p>
+                <p class="text-secondary">خرید اقساطی</p>
+            </div>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <p class="mb-2 text-black">خدمات مشتریان</p>
+                <p class="text-secondary">پرسش‌های متداول</p>
+                <p class="text-secondary"> راهنمای خرید</p>
+                <p class="text-secondary">شرایط بازگشت کالا</p>
+                <p class="text-secondary">ثبت شکایات </p>
+                <p class="text-secondary">حریم خصوصی</p>
+            </div>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <p class="mb-2 text-black">دسته‌بندی‌های پربازدید</p>
+                <p class="text-secondary">گوشی موبایل</p>
+                <p class="text-secondary"> لپتاب</p>
+                <p class="text-secondary">هدفون و هندزفری</p>
+                <p class="text-secondary">اسپیکر و بلندگو</p>
+                <p class="text-secondary">ساعت هوشمند</p>
+                <p class="text-secondary">شارژر و پاوربانک</p>
+            </div>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <p class="mb-2 text-black">ساعت پاسخگویی</p>
+                <p class="text-secondary">۷ روز هفته از ساعت ۹ الی ۲۰</p>
+                <div>
+                    <div class="mohtava d-flex gap-2 ">
+                        <i class="bx bx-support mt-1" ></i>
+                        <div class="call d-flex flex-column">
+                            <p> تلفن امور مشتریان
+                              <p class="text-secondary">021-41016</p>
+                            </p>                           
+                          </div>
+                    </div>
+                    <div class="mohtava d-flex gap-2">
+                        <i class="bx bx-info-circle mt-1"></i>
+                        <div>
+                            <p >روابط عمومی </p>
+                            <p class="text-secondary">Info@sabatech.com</p>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            <!---------------------- social media column -------------------- -->
+            <div class="d-flex flex-column gap-2 mt-4">
+                <h3> ما را دنبال کنید </h3>
+                <div>
+                    <img src="social media/bxl-facebook.svg" alt="facebook">
+                    <img src="social media/bxl-instagram.svg" alt="instagram">
+                    <img src="social media/bxl-telegram.svg" alt="telegram">
+                    <img src="social media/bxl-twitter.svg" alt="twitter">
+                </div>
+            </div>            
+        </div>
+            <!-------------------- متن فروشگاه اینترنتی صباتک ------------------------>
+            <div class=" mt-2 d-lg-flex">
+            <div >
+                <h1 class=" mb-2 ">
+                  فروشگاه اینترنتی <span class="text-[#E10A0A]">صباتک</span>
+                </h1>
+                <p class="text-[11px]  font-iranyekan-bold text-[#878787]">
+                  فروشگاه اینترنتی صباتک به طور رسمی در فروردین ماه ۹۹ با توجه
+                  به رشد روزافزون خدمات اینترنتی و دنیای تکنولوژی در جهان امروز و
+                  نیاز به کالاهای دیجیتال تاسیس شد. هدف این فروشگاه اینترنتی
+                  خدمت‌رسانی و تامین جدیدترین مدل‌ها از معتبرترین برند‌های کالای
+                  دیجیتال ، لوازم خانگی و سرگرمی است.
+                </p>
+              </div>
+              <!-------------------------- namade etemad ------------------- -->
+
+              <div class="d-lg-flex d-flex justify-content-center gap-3 mt-4">
+                <img src="footer/etemad.png" alt="" class="img-etemad">
+                <img src="footer/namad.webp" alt="" class="img-etemad">
+              </div>
+        </div>
+        <hr>
+        <!--------------------- copyright text ----------------------->
+        <div class=" d-lg-block mt-2 ">
+            <div class="container mx-auto d-lg-flex justify-content-around">
+                <div class=" w-50">
+                  <p class=""> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>              
+              </div>
+              <div  class="copyright">© Copyright 2022 sabatech.com</div>
+            </div>
+           
+          </div>
+    </footer>
+    <!------------------------- mobile footer ---------------------->
+    <footer class="d-block d-sm-block d-md-block d-lg-none d-xl-none justify-content-around gap-3  p-3">
+        <div class="w-75 m-auto border p-3 rounded-3 mt-3">
+            <img class="img  d-block m-auto " src="pic/logo copy.png" alt="">
+        </div>
+        <div class=" w-full container text-center m-auto">
+            <p class="mt-3 text-secondary">
+              <span class="text-danger">همراه شما هستیم.</span> با ما در ارتباط
+              باشید...
+            </p>
+          </div>
+          <div class=" gap-2 d-flex justify-content-center gap-5">
+            <div class="mohtava d-flex gap-2 ">
+                <i class="bx bx-support mt-1" ></i>
+                <div class="call d-flex flex-column">
+                    <p> تلفن امور مشتریان
+                      <p class="text-secondary">021-41016</p>
+                    </p>                           
+                  </div>
+            </div>
+            <div class="mohtava d-flex gap-2 ">
+                <i class="bx bx-info-circle mt-1"></i>
+                <div>
+                    <p >روابط عمومی </p>
+                    <p class="text-secondary">Info@sabatech.com</p>
+                </div>                   
+            </div>
+
+          </div>
+         <!-- icon -->
+         <div class=" d-flex m-3 d-md-flex gap-5 text-secondary justify-content-center">
+            <div class="text-center">
+                <img src="footer/express-delivery.svg" alt="">
+                <p class="">امکان تحویل اکسپرس</p>
+            </div>
+            <div class="text-center">
+                <img src="footer/cash-on-delivery.svg" alt="">
+                <p>امکان پرداخت در محل</p>
+            </div>
+            <div class="text-center">
+                <img src="footer/support.svg" alt="">
+                <p> ۷ روز هفته، ۲۴ ساعته</p>
+            </div>
+            <div class="text-center d-none d-sm-block">
+                <img src="footer/days-return.svg" alt="">
+                <p>۷ روز ضمانت بازگشت </p>
+            </div>
+            <div class="text-center d-none d-sm-block">
+                <img src="footer/original-products.svg" alt="">
+                <p>ضمانت اصل بودن کالا</p>
+            </div>
+        </div>
+      <!-------------------- متن فروشگاه اینترنتی صباتک ------------------------>
+                   <div class=" mt-2 d-lg-none d-block d-sm-block d-md-flex gap-2">
+                    <div >
+                        <h1 class=" mb-2 ">
+                          فروشگاه اینترنتی <span class="text-[#E10A0A]">صباتک</span>
+                        </h1>
+                        <p class="text-[11px]  font-iranyekan-bold text-[#878787]">
+                          فروشگاه اینترنتی صباتک به طور رسمی در فروردین ماه ۹۹ با توجه
+                          به رشد روزافزون خدمات اینترنتی و دنیای تکنولوژی در جهان امروز و
+                          نیاز به کالاهای دیجیتال تاسیس شد. هدف این فروشگاه اینترنتی
+                          خدمت‌رسانی و تامین جدیدترین مدل‌ها از معتبرترین برند‌های کالای
+                          دیجیتال ، لوازم خانگی و سرگرمی است.
+                        </p>
+                      </div>
+                      <!-------------------------- namade etemad ------------------- -->
+                      <div class="d-lg-none mt-4 d-sm-flex d-md-flex justify-content-center gap-2 m-sm-auto text-center">
+                        <img src="footer/etemad.png" alt="" class="img-etemad m-auto">
+                        <img src="footer/namad.webp" alt="" class="img-etemad m-auto">
+                      </div>
+                </div>
+                <hr>
+                <!--------------------- copyright text ----------------------->
+                <div class=" d-lg-block mt-2 ">
+                    <div class="container mx-auto d-none d-sm-none d-md-flex justify-content-around gap-5">
+                        <div class=" w-50">
+                          <p class=""> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>              
+                      </div>
+                      <div  class="copyright">© Copyright 2022 sabatech.com</div>
+                    </div>
+                   
+                  </div>
+                  <!-- copyright mobile -->
+                  <div class=" mt-2 ">
+                    <div class=" d-flex d-sm-flex d-md-none ">
+                        <div class=" w-100">
+                          <p class="w-100"> © کلیه حقوق این وب سایت متعلق به صباتک است.</p>  
+                          <div  class="">© Copyright 2022 sabatech.com</div>            
+                      </div>                     
+                   </div>                  
+                  </div>
+    </footer>
+<!------------------------------ Swiper1 JS ----------------------------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var Swiper = new Swiper1(".mySwiper1", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<!------------------------------- Swiper brands JS -------------------------------->
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 10, // Number of slides to show at once
+        spaceBetween: 40, // Space between slides
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 1000, // Delay between transitions
+            disableOnInteraction: false, // Continue autoplay after user interaction
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+<!-- -------------------------------------------------------------------- -->
+</body>
+</html>
